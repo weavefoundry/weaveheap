@@ -1,0 +1,13 @@
+[package]
+name = "weaveheap-wasm"
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+
+[lib]
+name = "weaveheap_wasm"
+path = "src/lib.rs"
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+weaveheap-core = { path = "../weaveheap-core" }

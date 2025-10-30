@@ -1,0 +1,5 @@
+package weaveheap:scaffold
+
+world weaveheap {
+  export func version-major() -> s32
+}

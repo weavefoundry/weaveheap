@@ -1,0 +1,10 @@
+[build-system]
+requires = ["maturin>=1.4,<2.0"]
+build-backend = "maturin"
+
+[project]
+name = "weaveheap"
+version = "0.0.0"
+description = "WeaveHeap Python bindings (scaffold)"
+requires-python = ">=3.8"
+authors = [{ name = "WeaveHeap Contributors" }]

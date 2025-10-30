@@ -1,0 +1,9 @@
+{
+  "name": "weaveheap-sample-node",
+  "version": "0.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "node index.mjs"
+  }
+}

@@ -1,0 +1,15 @@
+[package]
+name = "weaveheap-node"
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+
+[lib]
+name = "weaveheap_node"
+crate-type = ["cdylib"]
+path = "src/lib.rs"
+
+[dependencies]
+napi = { version = "2", default-features = false, features = ["napi4"] }
+napi-derive = "2"
+weaveheap-capi = { path = "../weaveheap-capi" }

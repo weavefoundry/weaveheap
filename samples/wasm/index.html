@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>WeaveHeap WASM Sample (scaffold)</title>
+  </head>
+  <body>
+    <h1>WeaveHeap WASM Sample</h1>
+    <pre id="out">Loading...</pre>
+    <script type="module">
+      import { init } from "../../crates/weaveheap-wasm/js/glue.js";
+      try {
+        const api = await init("../../target/wasm32-unknown-unknown/debug/weaveheap_wasm.wasm");
+        document.getElementById("out").textContent = `versionMajor: ${api.versionMajor()}`;
+      } catch (e) {
+        document.getElementById("out").textContent = `WASM not available (scaffold): ${e}`;
+      }
+    </script>
+  </body>
+</html>

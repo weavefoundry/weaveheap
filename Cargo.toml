@@ -1,0 +1,21 @@
+[workspace]
+members = [
+  "crates/weaveheap-core",
+  "crates/weaveheap-capi",
+  "crates/weaveheap-node",
+  "crates/weaveheap-python",
+  "crates/weaveheap-wasm",
+  "crates/weaveheap-cli",
+  "samples/rust"
+]
+resolver = "2"
+
+[workspace.package]
+edition = "2021"
+version = "0.1.0"
+authors = ["WeaveHeap Contributors"]
+license = "Apache-2.0"
+
+[workspace.dependencies]
+thiserror = "1"
+anyhow = "1"

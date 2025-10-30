@@ -1,0 +1,7 @@
+[package]
+name = "weaveheap-sample-rust"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+weaveheap-core = { path = "../../crates/weaveheap-core" }
